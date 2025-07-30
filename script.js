@@ -1,16 +1,16 @@
-// Reveal on scroll
-const sections = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.2 });
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-sections.forEach(section => {
-  observer.observe(section);
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-
+// You can add more JavaScript here for:
+// - Dynamic content loading
+// - Form validation (if you add a contact form)
+// - Animations or effects
+// - Dark mode toggle (if desired)
 
