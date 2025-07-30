@@ -1,48 +1,123 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+:root {
+  --primary: #0c2d48;
+  --accent: #4cc9f0;
+  --bg: #f7f9fb;
+  --text: #2a2a2a;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background: #f0f2f5;
-  color: #333;
+  box-sizing: border-box;
 }
-header {
-  background: #0c2d48;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: var(--primary);
+  padding: 1rem 2rem;
   color: white;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-header h1 {
-  font-size: 2.8rem;
-  margin: 0;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
-.contact a {
-  color: #d1e8ff;
-  margin: 0 1rem;
+.nav-links a {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
-main {
-  padding: 2rem;
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #0c2d48, #145374);
+  color: white;
+}
+.hero span {
+  color: var(--accent);
+}
+.socials a {
+  margin: 0 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.section {
+  padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
-section {
-  margin-bottom: 2rem;
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary);
 }
-.projects-grid {
+
+.card-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
-.projects-grid div {
-  flex: 1 1 30%;
-  background: #fff;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.card {
+  flex: 1 1 300px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
 }
-footer {
-  background: #0c2d48;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+.skills li {
+  background: var(--primary);
   color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  background: var(--primary);
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
