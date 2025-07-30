@@ -5,73 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohit Dinde | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Rohit Dinde</h1>
-    <p>Aspiring Cybersecurity Professional | Cloud & DevOps Enthusiast</p>
-    <div class="contact">
-      <a href="mailto:dinde.infosec@gmail.com">📧 Email</a>
-      <a href="https://www.linkedin.com/in/rohitdinde/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/Rohit30Confluence" target="_blank">💻 GitHub</a>
+  <nav class="navbar">
+    <div class="logo">Rohit Dinde</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi, I'm <span>Rohit</span> 👋</h1>
+    <p>Cybersecurity | Cloud | DevOps | Full Stack</p>
+    <div class="socials">
+      <a href="mailto:dinde.infosec@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/rohitdinde/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Rohit30Confluence" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="section fade-in">
       <h2>About Me</h2>
-      <p>Computer Engineering student at Sinhgad College, Pune. Passionate about cybersecurity, cloud, DevOps, and web development. GPA: 7.54/10</p>
+      <p>Computer Engineering undergrad (7.54 GPA) passionate about security, scripting, and systems. Experienced in real-world security operations, cloud deployments, and web architecture.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section fade-in">
       <h2>Experience</h2>
-      <ul>
-        <li><strong>Security Associate – Secura (Jan–May 2025):</strong> SIEM triage, IDS monitoring, incident response, threat intelligence.</li>
-        <li><strong>Cybersecurity Intern – IIT Hyderabad (Dec 2023–Feb 2025):</strong> Vulnerability assessment, Python/Bash scripting, firewall config.</li>
-        <li><strong>Senior Associate – WNS Global (Aug–Dec 2024):</strong> Backend data analysis, SQL, healthcare domain insights.</li>
-        <li><strong>Apprentice – Tech Mahindra (Dec 2023–Jun 2024):</strong> Customer support for Adani Electricity, service resolution.</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div>
-          <h3>Vulnerability Scanner</h3>
-          <p>Scans OWASP Top 10 issues. Uses Flask + Python. SMTP alerts enabled.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Security Associate @ Secura</h3>
+          <p>SIEM triage, IDS analysis, threat detection, response coordination.</p>
         </div>
-        <div>
-          <h3>Keylogger Detection Tool</h3>
-          <p>Windows tool that detects keylogging using hook analysis. Built in C++.</p>
+        <div class="timeline-item">
+          <h3>Cybersecurity Intern @ IIT Hyderabad</h3>
+          <p>OWASP testing, Python automation, threat detection, Linux tooling.</p>
         </div>
-        <div>
-          <h3>Packet Sniffer</h3>
-          <p>Scapy-based tool to analyze network packets and detect anomalies.</p>
+        <div class="timeline-item">
+          <h3>WNS Global | Tech Mahindra</h3>
+          <p>SQL data analysis, customer support, issue triage for Adani Energy.</p>
         </div>
       </div>
     </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <p><a href="https://doi.org/10.1109/TASC.2023.3340648" target="_blank">
-        Anti-Adaptive Harmful Bird Repelling Based on Deep Learning (IEEE 2023)
-      </a></p>
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🔍 Vulnerability Scanner</h3>
+          <p>Scans OWASP Top 10 using Flask + Python, with alert emails.</p>
+        </div>
+        <div class="card">
+          <h3>🛡️ Keylogger Detector</h3>
+          <p>Windows tool to catch keylogging via low-level hook analysis.</p>
+        </div>
+        <div class="card">
+          <h3>📡 Packet Sniffer</h3>
+          <p>Built using Scapy. Monitors and analyzes network traffic.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>🛡️ Cybersecurity: OWASP Top 10, Wireshark, Snort, Metasploit</li>
-        <li>☁️ Cloud & DevOps: AWS EC2, Docker, Git, Linux</li>
-        <li>💻 Languages: Python, Bash, C++, JavaScript, HTML, CSS</li>
-        <li>🌐 Web: Node.js, Express, MongoDB, MySQL</li>
-        <li>🤝 Soft Skills: Communication, Documentation, Problem-Solving</li>
+    <section id="skills" class="section fade-in">
+      <h2>Skills & Tools</h2>
+      <ul class="skills">
+        <li>Python</li><li>C++</li><li>Bash</li><li>Wireshark</li><li>Snort</li>
+        <li>AWS</li><li>Docker</li><li>Linux</li><li>HTML/CSS/JS</li><li>MongoDB</li>
       </ul>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:dinde.infosec@gmail.com">dinde.infosec@gmail.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Rohit Dinde | Pune, India</p>
+    <p>© 2025 Rohit Dinde — Built with ❤️</p>
   </footer>
 
   <script src="script.js"></script>
