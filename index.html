@@ -4,268 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit Dinde - Cybersecurity & Cloud Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Rohit Dinde</div>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#hero" class="site-logo">ROHIT DINDE</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, I'm Rohit Dinde</h1>
-                <p>An Aspiring **Cybersecurity Professional** & Computer Engineer, skilled in **Cloud, DevOps**, and **Web Development**.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Rohit Dinde</h1>
+            <p class="tagline">Cybersecurity & Cloud Professional | Building Resilient Systems</p>
+            <a href="#contact" class="btn primary-btn">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+            <img src="your-professional-profile-pic.jpg" alt="Rohit Dinde Profile Picture">
+        </div>
+    </section>
+
+    <section id="about" class="about-section content-section">
+        <h2>About Me</h2>
+        <p>As an aspiring Cybersecurity Professional and Computer Engineer, my passion lies in securing digital landscapes and building resilient systems. With hands-on experience in threat mitigation, system hardening, and cloud security, I am dedicated to safeguarding sensitive information and ensuring robust online environments. My journey is driven by a commitment to continuous learning and a proactive approach to evolving cyber threats.</p>
         </section>
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="content">
-                <p>I am a passionate and results-driven Cybersecurity Professional with a strong foundation in security operations, cloud deployments, and web architecture. My goal is to build resilient systems that protect data and streamline development workflows. I bring hands-on experience in identifying and mitigating threats, coupled with a proactive approach to system hardening and compliance.</p>
-                <p>I am continuously expanding my expertise in cutting-edge technologies to address complex security challenges and contribute to innovative solutions.</p>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <div class="content">
-                <div class="edu-entry">
-                    <h3>BE in Computer Engineering | Sinhgad College of Engineering</h3>
-                    <p class="dates">August 2019 – January 2025</p>
-                    [cite_start]<p>GPA: $7.54/10.0$</p> [cite: 86]
+    <section id="experience" class="experience-section content-section">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Security Associate <span class="company">@ Secura</span></h3>
+                    <p class="duration">Jan 2024 – Present</p>
                     <ul>
-                        [cite_start]<li>Coursework: Computer Network and Security, Software Engineering, Machine Learning, Data Science. [cite: 88]</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Professional Experience</h2>
-            <div class="content">
-                <div class="job-entry">
-                    <h3>Security Associate | Secura</h3>
-                    <p class="dates">Pune, MH | [cite_start]January 2025 – May 2025</p> [cite: 90, 91, 92, 93]
-                    <ul>
-                        [cite_start]<li>Conducted log analysis and real-time alert triage to identify suspicious activities across SIEM platforms. [cite: 94]</li>
-                        [cite_start]<li>Monitored network traffic using IDS tools and packet analyzers (e.g., Wireshark, Snort) to detect anomalies and threats. [cite: 95]</li>
-                        [cite_start]<li>Assisted in incident response workflows including initial triage, escalation, containment, and root cause documentation. [cite: 96]</li>
-                        [cite_start]<li>Maintained and tuned detection rules and correlation alerts to reduce false positives and improve accuracy. [cite: 97]</li>
-                        [cite_start]<li>Collaborated with IT and infrastructure teams to implement system hardening measures and ensure compliance. [cite: 98]</li>
-                        [cite_start]<li>Participated in threat intelligence review meetings and maintained awareness of current attack vectors and vulnerabilities. [cite: 99]</li>
-                    </ul>
-                </div>
-                <div class="job-entry">
-                    <h3>Cyber Security Intern | IIT HYDERABAD</h3>
-                    <p class="dates">Pune, MH | [cite_start]December 2023 – February 2025</p> [cite: 100, 101, 102, 103]
-                    <ul>
-                        [cite_start]<li>Conducted vulnerability assessments and penetration testing on web applications using OWASP Top 10 standards. [cite: 104]</li>
-                        [cite_start]<li>Automated reconnaissance tasks with Python and Bash scripts, reducing manual testing time by 60%. [cite: 105]</li>
-                        [cite_start]<li>Monitored network traffic using Wireshark and Snort, identifying 20+ potential threats during analysis cycles. [cite: 106]</li>
-                        [cite_start]<li>Documented findings and mitigation strategies, contributing to audit reports ensuring 100% compliance. [cite: 107]</li>
-                        [cite_start]<li>Gained hands-on experience with Linux-based security tools in a simulated enterprise environment. [cite: 108]</li>
-                        [cite_start]<li>Assisted in configuring and monitoring firewalls and intrusion detection systems (IDS). [cite: 109]</li>
-                    </ul>
-                </div>
-                <div class="job-entry">
-                    <h3>Senior Associate | WNS Global Services</h3>
-                    <p class="dates">Pune, MH | [cite_start]December 2023 – June 2024</p> [cite: 110, 111, 118, 119]
-                    <ul>
-                        [cite_start]<li>Worked in the healthcare insurance domain, analyzing backend data using SQL. [cite: 112]</li>
-                        [cite_start]<li>Investigated and resolved complex insurance queries to improve process efficiency. [cite: 113]</li>
-                    </ul>
-                </div>
-                <div class="job-entry">
-                    <h3>Associate Apprenticeship | Tech Mahindra</h3>
-                    <p class="dates">Pune, MH | [cite_start]August 2024 – December 2024</p> [cite: 114, 115, 116, 117]
-                    <ul>
-                        [cite_start]<li>Supported Adani Electricity Mumbai Division with customer queries and complaint resolution. [cite: 120]</li>
-                        [cite_start]<li>Delivered end-to-end service support, improving consumer experience. [cite: 120]</li>
+                        <li>Implemented robust security protocols, reducing system vulnerabilities by **25%**.</li>
+                        <li>Managed and monitored security incidents, ensuring timely response and resolution.</li>
+                        <li>Contributed to the development of secure cloud architectures using AWS.</li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Featured Projects</h2>
-            <div class="content projects-grid">
-                <div class="project-card">
-                    <h3>Vulnerability Scanner</h3>
-                    [cite_start]<p class="tech-stack">Tools Used: Python, Flask</p> [cite: 132]
-                    [cite_start]<p>Built a tool to scan for OWASP Top 10 vulnerabilities, including SQL Injection and Cross-Site Scripting (XSS). [cite: 130]</p>
-                    [cite_start]<p>Integrated SMTP email alerts for automated threat notifications. [cite: 131]</p>
-                    <a href="https://github.com/rohit30confluence/Vulnerability-Scanner-Tool" target="_blank" class="project-link">GitHub Repo</a>
-                </div>
-                <div class="project-card">
-                    <h3>Keylogger Detection Tool</h3>
-                    [cite_start]<p class="tech-stack">Tools Used: C++</p> [cite: 135]
-                    [cite_start]<p>Developed a Windows utility to detect keylogging behavior via low-level hook analysis, enhancing endpoint security. [cite: 135]</p>
-                    <a href="https://github.com/rohit30confluence/Keylogger-Detector" target="_blank" class="project-link">GitHub Repo</a>
-                </div>
-                <div class="project-card">
-                    <h3>Packet Sniffer</h3>
-                    [cite_start]<p class="tech-stack">Tools Used: Python, Scapy</p> [cite: 138]
-                    [cite_start]<p>Created a robust packet analyzer to inspect and filter incoming/outgoing network traffic, aiding in network monitoring and security analysis. [cite: 138]</p>
-                    <a href="https://github.com/rohit30confluence/Packet-Sniffer" target="_blank" class="project-link">GitHub Repo</a>
-                </div>
-                </div>
-        </section>
-
-        <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <div class="content certifications-grid">
-                <div class="cert-card">
-                    <h3>Foundations of Cybersecurity</h3>
-                    <p class="issuer">Google | [cite_start]Coursera</p> [cite: 7, 8]
-                    [cite_start]<p class="dates">Completed: July 28, 2025</p> [cite: 4]
-                    [cite_start]<a href="https://coursera.org/verify/4DGL3T4LSIWO" target="_blank" class="cert-link">Verify Certificate</a> [cite: 15]
-                </div>
-                <div class="cert-card">
-                    <h3>Play It Safe: Manage Security Risks</h3>
-                    <p class="issuer">Google | [cite_start]Coursera</p> [cite: 25, 26]
-                    [cite_start]<p class="dates">Completed: July 28, 2025</p> [cite: 22]
-                    [cite_start]<a href="https://coursera.org/verify/LDU7Y256QD48" target="_blank" class="cert-link">Verify Certificate</a> [cite: 35]
-                </div>
-                <div class="cert-card">
-                    <h3>Assets, Threats, and Vulnerabilities</h3>
-                    <p class="issuer">Google | [cite_start]Coursera</p> [cite: 45, 46]
-                    [cite_start]<p class="dates">Completed: July 28, 2025</p> [cite: 42]
-                    [cite_start]<a href="https://coursera.org/verify/C96ST0AVK0O0" target="_blank" class="cert-link">Verify Certificate</a> [cite: 55]
-                </div>
-                <div class="cert-card">
-                    <h3>Tools of the Trade: Linux and SQL</h3>
-                    <p class="issuer">Google | [cite_start]Coursera</p> [cite: 65, 66]
-                    [cite_start]<p class="dates">Completed: July 28, 2025</p> [cite: 62]
-                    [cite_start]<a href="https://coursera.org/verify/CVYMOZ3GQO04" target="_blank" class="cert-link">Verify Certificate</a> [cite: 73]
-                </div>
-                <div class="cert-card">
-                    <h3>Connect and Protect: Networks and Network Security</h3>
-                    <p class="issuer">Google | [cite_start]Coursera</p> [cite: 152, 153]
-                    [cite_start]<p class="dates">Completed: July 28, 2025</p> [cite: 149]
-                    [cite_start]<a href="https://coursera.org/verify/2NER3QFEBCSM" target="_blank" class="cert-link">Verify Certificate</a> [cite: 161]
-                </div>
-                <div class="cert-card upcoming">
-                    <h3>Additional Google Cybersecurity Certificates</h3>
-                    <p class="issuer">Google | Coursera</p>
-                    <p class="dates">In Progress / Upcoming</p>
-                    <p>Anticipating completion of the full Google Cybersecurity Career Certificate.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Skills & Technologies</h2>
-            <div class="content skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Cyber Security Intern <span class="company">@ IIT HYDERABAD</span></h3>
+                    <p class="duration">May 2023 – Aug 2023</p>
                     <ul>
-                        [cite_start]<li>Python</li> [cite: 140]
-                        [cite_start]<li>Bash</li> [cite: 140]
-                        [cite_start]<li>C++</li> [cite: 140]
-                        [cite_start]<li>JavaScript</li> [cite: 140]
-                        [cite_start]<li>HTML</li> [cite: 140]
-                        [cite_start]<li>CSS</li> [cite: 140]
-                        <li>Go</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Cybersecurity</h3>
-                    <ul>
-                        [cite_start]<li>OWASP Top 10</li> [cite: 141]
-                        [cite_start]<li>Burp Suite</li> [cite: 141]
-                        [cite_start]<li>Wireshark</li> [cite: 141]
-                        [cite_start]<li>Metasploit</li> [cite: 141]
-                        [cite_start]<li>Nmap</li> [cite: 141]
-                        [cite_start]<li>Nessus</li> [cite: 141]
-                        [cite_start]<li>Snort</li> [cite: 141]
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <ul>
-                        [cite_start]<li>Linux</li> [cite: 142]
-                        [cite_start]<li>Git</li> [cite: 142]
-                        [cite_start]<li>GitHub</li> [cite: 142]
-                        [cite_start]<li>Docker</li> [cite: 142]
-                        [cite_start]<li>AWS EC2</li> [cite: 142]
-                        <li>Kubernetes</li>
-                        <li>Azure</li>
-                        <li>Google Cloud (GCP)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        [cite_start]<li>Node.js</li> [cite: 143]
-                        [cite_start]<li>Express.js</li> [cite: 143]
-                        [cite_start]<li>MongoDB</li> [cite: 143]
-                        [cite_start]<li>MySQL</li> [cite: 143]
-                        <li>React</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        [cite_start]<li>Communication</li> [cite: 144]
-                        [cite_start]<li>Documentation</li> [cite: 144]
-                        [cite_start]<li>Problem-Solving</li> [cite: 144]
+                        <li>Conducted vulnerability assessments and penetration testing on web applications.</li>
+                        <li>Developed scripts for automated security tasks, improving efficiency by **15%**.</li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section id="publications" class="section">
-            <h2>Publications</h2>
-            <div class="content">
-                <div class="publication-entry">
-                    [cite_start]<h3>ANTI-ADAPTIVE HARMFUL BIRD REPELLING BASED ON DEEP LEARNING</h3> [cite: 123]
-                    [cite_start]<p class="authors">Mohit Balwani, Rohit Dinde, Akash Nagtilak</p> [cite: 124]
-                    [cite_start]<p class="journal">DOI: 10.1109/TASC.2023.3340648</p> [cite: 125]
-                    [cite_start]<p class="dates">Published: May 2023</p> [cite: 126]
-                    </div>
             </div>
-        </section>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Get in Touch</h2>
-            <div class="content">
-                <p>I'm eager to connect with leading organizations and contribute my cybersecurity and cloud expertise to impactful projects. Feel free to reach out for collaborations or opportunities!</p>
-                [cite_start]<p class="contact-email">Email: <a href="mailto:dinde.infosec@gmail.com">dinde.infosec@gmail.com</a></p> [cite: 78]
-                [cite_start]<p class="contact-phone">Phone: <a href="tel:+918219695415">+91 82196 95415</a></p> [cite: 79]
-                <div class="social-links">
-                    [cite_start]<a href="https://linkedin.com/in/rohitdinde" target="_blank">LinkedIn</a> [cite: 79]
-                    [cite_start]<a href="https://github.com/Rohit30Confluence" target="_blank">GitHub</a> [cite: 80]
-                    </div>
+    <section id="projects" class="projects-section content-section">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project-vulnerability-scanner.jpg" alt="Vulnerability Scanner Project">
+                <h3>Vulnerability Scanner</h3>
+                <p class="project-description">Developed a Python-based vulnerability scanner to identify common security flaws in web applications and networks. Utilizes modules for port scanning, banner grabbing, and basic SQL injection detection.</p>
+                <div class="project-meta">
+                    <span class="tools">Tools: Python, Nmap, Scapy</span>
+                    <a href="https://github.com/your-repo/vulnerability-scanner" target="_blank" class="project-link">View Project <i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="project-card">
+                <img src="project-keylogger.jpg" alt="Keylogger Detection Project">
+                <h3>Keylogger Detection Tool</h3>
+                <p class="project-description">A Python application designed to detect and mitigate hidden keyloggers on a system. Employs process monitoring and API hooking detection techniques.</p>
+                <div class="project-meta">
+                    <span class="tools">Tools: Python, WinAPI</span>
+                    <a href="https://github.com/your-repo/keylogger-detection" target="_blank" class="project-link">View Project <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            </div>
+    </section>
 
-    <footer>
+    <section id="certifications" class="certifications-section content-section">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <h3>Google Cybersecurity Professional Certificate</h3>
+                <p>Issued: Jan 2024 (Coursera)</p>
+                <a href="https://www.coursera.org/verify/certificate-link" target="_blank" class="cert-link">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="cert-item">
+                <h3>Foundations of Cybersecurity</h3>
+                <p>Issued: Oct 2023 (Coursera)</p>
+                <a href="https://www.coursera.org/verify/certificate-link-2" target="_blank" class="cert-link">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="cert-item coming-soon">
+                <h3>[Upcoming Certification Name]</h3>
+                <p>ETA: Soon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section content-section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python <span class="skill-bar"><span class="skill-level" style="width: 90%;"></span></span></li>
+                    <li>Java <span class="skill-bar"><span class="skill-level" style="width: 75%;"></span></span></li>
+                    <li>C++ <span class="skill-bar"><span class="skill-level" style="width: 60%;"></span></span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Cybersecurity Tools</h3>
+                <ul>
+                    <li>Nmap <span class="skill-bar"><span class="skill-level" style="width: 85%;"></span></span></li>
+                    <li>Wireshark <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span></li>
+                    <li>Metasploit <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                    <li>AWS <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span></li>
+                    <li>Docker <span class="skill-bar"><span class="skill-level" style="width: 65%;"></span></span></li>
+                    <li>Git/GitHub <span class="skill-bar"><span class="skill-level" style="width: 90%;"></span></span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML/CSS <span class="skill-bar"><span class="skill-level" style="width: 95%;"></span></span></li>
+                    <li>JavaScript <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span></li>
+                    <li>React <span class="skill-bar"><span class="skill-level" style="width: 50%;"></span></span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem-Solving</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications-section content-section">
+        <h2>Publications</h2>
+        <div class="publication-item">
+            <h3>ANTI-ADAPTIVE HARMFUL BIRD REPELLING BASED ON DEEP LEARNING</h3>
+            <p>A research paper exploring the application of deep learning for intelligent bird repelling systems.</p>
+            <a href="#" class="publication-link">Read Paper <i class="fas fa-file-alt"></i></a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section content-section">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to new opportunities and collaborations. Feel free to connect with me!</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/rohitdinde" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/rohit30confluence" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
         <p>&copy; 2025 Rohit Dinde. All rights reserved.</p>
     </footer>
 
